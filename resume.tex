@@ -22,11 +22,11 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.83in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{hyperref}
 
 \name{Erik Hasse} % Your name
-\address{\href{mailto:erik.hasse@mg.thedataincubator.com}{erik.hasse@mg.thedataincubator.com}} % Your address
+\address{\href{mailto:erik.g.hasse@gmail.com}{erik.g.hasse@gmail.com}} % Your address
 \address{(507)~$\cdot$~995~$\cdot$~3159} % Your phone number and email
 
 \begin{document}
@@ -37,7 +37,7 @@
 
 \begin{rSection}{Summary}
 
-Mathematician with a passion for data science and machine learning. Experience teaching gives strong oral and written communication skills. Enjoys camping and astrophotography.
+Data Scientist and Mathematician with a passion for finding patterns. Experience teaching gives strong oral and written communication skills. Enjoys travel  and astrophotography.
 
 \end{rSection}
 
@@ -48,32 +48,11 @@ Mathematician with a passion for data science and machine learning. Experience t
 \begin{rSection}{Technical Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming & Python, Haskell\\[5pt]
-Python Packages & NumPy, Pandas, SciKit-Learn, Seaborn, TensorFlow, PySpark\\[5pt]
-Machine Learning & \begin{tabular}[t]{@{}l@{}}Linear and Logistic Regression, $k$-Nearest Neighbors,\\ $k$-Means Clustering,  Neural Networks\end{tabular} \\[20pt]
-Other & SQL Queries, Spark, Linear Algebra, LaTeX, vim, Unix Terminal
+Languages & Python, SQL, R, Scala, Haskell\\[5pt]
+Python Packages & \begin{tabular}[t]{@{}l@{}}NumPy, Pandas, SciKit-Learn, Matplotlib, Seaborn, BeautifulSoup,\\ TensorFlow, PySpark\end{tabular}\\[18pt]
+Machine Learning & \begin{tabular}[t]{@{}l@{}}Linear and Logistic Regression, $k$-Nearest Neighbors, Decision Trees,\\ Gradient Boosting, $k$-Means Clustering,  Neural Networks\end{tabular} \\[18pt]
+Other & \begin{tabular}[t]{@{}l@{}}Amazon Web Services, Web Scraping, git, Spark, Linear Algebra,\\ LaTeX, vim, Unix Terminal\end{tabular}
 \end{tabular}
-
-
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-{\bf University of Iowa}\hfill August 2018\\
-{\em Ph.D. in Mathematics}\hfill {\em Iowa City, IA}\\
-Dissertation Title: {\sl Lowest Terms in Commutative Rings}
-
-{\bf University of Iowa}\hfill May 2015\\
-{\em M.S. in Mathematics}\hfill {\em Iowa City, IA}
-
-{\bf North Dakota State University}\hfill May 2013\\
-{\em B.S. in Mathematics}\hfill {\em Fargo, ND}\\
-Minor in Computer Science
 
 
 \end{rSection}
@@ -82,7 +61,19 @@ Minor in Computer Science
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Employment History}
+\begin{rSection}{Relevant Experience}
+
+\begin{rSubsection}{Freddie Mac}{October 2018-Present}{Senior Data Scientist}{McLean, VA}
+\item Analyze hundreds of gigabytes of behavioral and economic data to find anomalies and ensure data quality for millions of records
+\item Assist with development for more than 20 statistical models by validating methodology and simplifying feature engineering
+\item Manage a data governance program to maintain documentation and quality for data in production environments
+\end{rSubsection}
+
+\begin{rSubsection}{The Data Incubator}{June 2018-August 2018}{Fellow}{Washington, D.C.}
+\item Selected as one of approximately 30 Fellows from a pool of more than 3,000 applicants
+\item Worked collaboratively on weekly projects using SciKit-Learn, Spark, SQL, and other technologies to analyze a total of 20 GB of data
+\item Developed a capstone project which analyzed 32,000 Reddit posts to make recommendations
+\end{rSubsection}
 
 \begin{rSubsection}{University of Iowa}{August 2013-May 2018}{Teaching Assistant}{Iowa City, IA}
 \item Helped more than 500 students succeed in math courses from remedial to graduate levels
@@ -92,16 +83,35 @@ Minor in Computer Science
 
 %------------------------------------------------
 
-\begin{rSubsection}{John Deere Electronic Solutions}{October 2010 - September 2011}{Software Design Intern}{Fargo, ND}
-\item Wrote C++ programs to control test equipment such as 150 ampere batteries
-\item Ran tests on production code and reported bugs with potential fixes
-\item Assisted in creating documentation, including writing requirements and developing tests
-\end{rSubsection}
+%\begin{rSubsection}{John Deere Electronic Solutions}{October 2010 - September 2011}{Software Design Intern}{Fargo, ND}
+%\item Wrote C++ programs to control test equipment such as 150 ampere batteries
+%\item Ran tests on production code and reported bugs with potential fixes
+%\item Assisted in creating documentation, including writing requirements and developing tests
+%\end{rSubsection}
 
 %------------------------------------------------
 
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Iowa}\hfill August 2018\\
+{\em Ph.D. and M.S. in Mathematics}\hfill {\em Iowa City, IA}%\\
+%Dissertation Title: {\sl Lowest Terms in Commutative Rings}
+
+{\bf North Dakota State University}\hfill May 2013\\
+{\em B.S. in Mathematics}\hfill {\em Fargo, ND}\\
+Minor in Computer Science
+
+
+\end{rSection}
+
+
 
 
 
