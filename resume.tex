@@ -22,7 +22,7 @@
 
 \documentclass[hidelinks]{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.6in,top=0.5in,right=0.6in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 
 \name{Erik Hasse} % Your name
@@ -37,9 +37,9 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Summary}
-
-Data Scientist and Mathematician with a passion for software development.
-Experience teaching gives strong oral and written communication skills.
+  Machine Learning Engineer passionate about deploying scientific computing into the real world.
+  Experienced in Python and Scala with a focus on time series forecasting and optimization.
+  Excited about sharing knowledge and helping the team succeed.
 
 \end{rSection}
 
@@ -51,18 +51,18 @@ Experience teaching gives strong oral and written communication skills.
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Languages &
-  Python (6 years), SQL (3 years), Julia (basic), Javascript (basic)
+  Python (8 years), SQL (5 years), Scala (1 year)
 \\[5pt]
-Python Packages & \begin{tabular}[t]{@{}l@{}}
-Keras, TensorFlow, XGBoost, NumPy, Pandas, Pytest, SciPy, gRPC,\\
-FastAPI, Scikit-learn, Streamlit, Matplotlib, Seaborn
+Python packages & \begin{tabular}[t]{@{}l@{}}
+    Pandas, NumPy, Scikit-Learn, Plotly, Matplotlib, Pydantic, FastAPI,\\
+    Streamlit, Django ORM, SQLAlchemy, Pytest, Scalene
 \end{tabular}\\[18pt]
-%Machine Learning & \begin{tabular}[t]{@{}l@{}}
-%Linear and Logistic Regression, $k$-Nearest Neighbors, Decision Trees,\\
-%Gradient Boosting, $k$-Means Clustering, Neural Networks
-%\end{tabular} \\[18pt]
+Scala packages & \begin{tabular}[t]{@{}l@{}}
+    Akka, Akka-HTTP, Tapir, Circe, gRPC, Scalatest\\
+\end{tabular}\\[5pt]
 Tools & \begin{tabular}[t]{@{}l@{}}
-Bash, Git, Docker, Jenkins, Jira, Amazon Web Services, MLFlow
+Bash, Git, Docker, Jenkins, Github Actions, Jira, MLFlow,\\
+Cloud providers (AWS, GCP, Azure)\\
 \end{tabular}
 \end{tabular}
 
@@ -75,18 +75,26 @@ Bash, Git, Docker, Jenkins, Jira, Amazon Web Services, MLFlow
 
 \begin{rSection}{Relevant Experience}
 
-\begin{rSubsection}{Lowe's}{December 2019-Present}{Senior Data Scientist}{Mooresville, NC}
-\item Develop a production application which allows data scientists to track, store, and deploy their models as an API
-\item Implement time series models predicting sales of thousands of items across 1700 stores to optimize workforce scheduling, improving margins by over \$25 million per year
-\item Create a platform for automating forecasting and time series anomaly detection and provide other data scientists with tools to build models on this platform
-% \item Develop production ready code using tools such as Pytest, Jenkins, and Git
-% \item Support team members by assisting with code quality and developing Python packages to simplify repetitive tasks
+\begin{rSubsection}{Fermata Energy}{Vehicle-to-everything platform provider}{Staff Machine Learning Engineer}{August 2022-Present}
+  \item Design and implement a package for simulating bidirectional electric vehicle chargers in Python to support market research, model development, and site optimization
+  \item Integrate backend services with third-party APIs to receive signals from utilities and market operators
+  \item Develop an orchestration service in Scala to conditionally run optimization models
+  \item Deploy models and optimization services into a production environment using REST APIs, gRPC services, and Argo Workflows
+  \item Support team members through code reviews, pair programming, and sharing best practices
 \end{rSubsection}
 
-\begin{rSubsection}{Freddie Mac}{October 2018-December 2019}{Senior Data Scientist}{McLean, VA}
-\item Analyzed hundreds of gigabytes of behavioral and economic data to ensure data quality
-\item Assisted with development of models by validating methodology and simplifying feature engineering
-\item Managed a data governance program to maintain documentation and quality for data in production environments
+\begin{rSubsection}{Lowe's Home Improvement}{Nationwide retailer}{Lead Machine Learning Engineer}{December 2019-July 2022}
+  \item Developed a platform for data scientists to track, store, and deploy their models as an API
+  \item Implemented time series models predicting sales of thousands of items across 1700 stores to optimize workforce scheduling, improving margins by over \$10 million per year
+  \item Created a platform for automating forecasting and time series anomaly detection and provided other data scientists with tools to build models on this platform
+  % \item Developed production ready code using tools such as Pytest, Jenkins, and Git
+  % \item Supported team members by assisting with code quality and developing Python packages to simplify repetitive tasks
+\end{rSubsection}
+
+\begin{rSubsection}{Freddie Mac}{Mortgage backer and insurer}{Senior Data Scientist}{October 2018-December 2019}
+%  \item Analyzed hundreds of gigabytes of behavioral and economic data to ensure data quality
+%  \item Assisted with development of models by validating methodology and simplifying feature engineering
+%  \item Managed a data governance program to maintain documentation and quality for data in production environments
 \end{rSubsection}
 
 % \begin{rSubsection}{The Data Incubator}{June 2018-August 2018}{Fellow}{Washington, D.C.}
@@ -95,10 +103,11 @@ Bash, Git, Docker, Jenkins, Jira, Amazon Web Services, MLFlow
 %   \item Developed a capstone project which analyzed 32,000 Reddit posts to make recommendations
 % \end{rSubsection}
 
-\begin{rSubsection}{University of Iowa}{August 2013-May 2018}{Teaching Assistant}{Iowa City, IA}
-\item Helped more than 500 students succeed in math courses from remedial to graduate levels
-\item Developed interpersonal skills via small group tutoring and leading classes of up to 40 students
-\item Provided accurate and prompt feedback on homework, quizzes, and exams for up to 90 students per semester
+\begin{rSubsection}{University of Iowa}{}{Mathematics Teaching Assistant}{August 2013-May 2018}
+
+% \item Helped more than 500 students succeed in math courses from remedial to graduate levels
+% \item Developed interpersonal skills via small group tutoring and leading classes of up to 40 students
+% \item Provided accurate and prompt feedback on homework, quizzes, and exams for up to 90 students per semester
 \end{rSubsection}
 
 %------------------------------------------------
@@ -120,13 +129,14 @@ Bash, Git, Docker, Jenkins, Jira, Amazon Web Services, MLFlow
 
 \begin{rSection}{Education}
 
-{\bf University of Iowa}\hfill August 2018\\
-{\em Ph.D. and M.S. in Mathematics}\hfill {\em Iowa City, IA}%\\
+{\bf University of Iowa}\\
+{\em Ph.D. in Mathematics}\hfill August 2018\\
+{\em M.S. in Mathematics}\hfill May 2013%\\
 %Dissertation Title: {\sl Lowest Terms in Commutative Rings}
 
-{\bf North Dakota State University}\hfill May 2013\\
-{\em B.S. in Mathematics}\hfill {\em Fargo, ND}\\
-Minor in Computer Science
+{\bf North Dakota State University}\\
+{\em B.S. in Mathematics, Minor in Computer Science}\hfill May 2013\\
+
 
 
 \end{rSection}
